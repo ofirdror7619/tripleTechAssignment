@@ -1,0 +1,11 @@
+{
+  "urls": {
+    "auth": "https://gw4favkunc.execute-api.il-central-1.amazonaws.com/auth"
+  },
+  "max_retries": 6,
+  "max_auth_sessions": 3,
+  "max_parallel_requests": 5,
+  "timeout_seconds": 10.0,
+  "token_expiry_buffer_seconds": 5.0,
+  "transient_statuses": [408, 429, 500, 502, 503, 504]
+}
