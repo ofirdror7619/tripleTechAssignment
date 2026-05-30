@@ -82,3 +82,9 @@ City: venice
 Average temperature: 20.175
 
 The average is formatted with up to 3 decimal digits.
+
+## Why Parallel Page Fetching?
+
+After page 1 returns `total_pages`, the remaining pages are independent from each other. Fetching them in parallel is faster than fetching them one by one, especially because each page request waits on network latency.
+
+Parallel fetching also helps finish the work within the short token lifetime. The app still keeps this controlled with `max_parallel_requests`, so it gets the speed benefit without opening too many requests at once.
