@@ -1,4 +1,4 @@
-# Average Temperature Exercise
+# Average Temperature Exercise - By Ofir Dror
 
 ## Flow
 
@@ -78,9 +78,7 @@ The app:
 
 Final output:
 
-{
 City: venice
 Average temperature: 20.175
-}
 
 The average is formatted with up to 3 decimal digits.
